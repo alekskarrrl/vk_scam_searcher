@@ -1,6 +1,6 @@
-.idea/
+git
 venv/
 __pycache__/
-git
-
+.idea/
+draft_code/
 
