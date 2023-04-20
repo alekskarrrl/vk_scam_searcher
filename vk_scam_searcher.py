@@ -9,7 +9,6 @@ from TelegramBot import TelegramBot
 
 load_dotenv()
 
-# APP_ID = os.getenv("APP_ID")
 SOURCE_ID = os.getenv("SOURCE_ID")
 ORIGIN_OWNER_ID = os.getenv("ORIGIN_OWNER_ID")
 ORIGIN_OWNER_FIRST_NAME = os.getenv("ORIGIN_OWNER_FIRST_NAME")
@@ -21,7 +20,7 @@ BOT_CHAT_ID = os.getenv("BOT_CHAT_ID")
 
 def main():
 
-    tg_bot = TelegramBot(TLG_BOT_TOKEN, '281231111')
+    tg_bot = TelegramBot(TLG_BOT_TOKEN, BOT_CHAT_ID)
     fake_history = []
     source_id = SOURCE_ID
     source = VKSource(source_id, APP_TOKEN)
