@@ -56,6 +56,10 @@ def main():
             for item in new_to_block:
                 acc_link = f"http://vk.com/id{item.user_id}"
                 tg_bot.telegram_bot_sendtext(acc_link)
+                print(acc_link)
+
+        if len(fakes_list) == 0:
+            fake_history.clear()
 
         time.sleep(60 * 15)
 
